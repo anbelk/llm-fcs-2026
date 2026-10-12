@@ -1,0 +1,15 @@
+{
+  "train_seconds": 180.73474814700057,
+  "optimizer_steps": 111,
+  "target_tokens": 3551822,
+  "tokens_per_second_including_warmup": 19652.125761179726,
+  "warmup_steps": 10,
+  "measured_steps": 101,
+  "measured_seconds": 100.82657918900077,
+  "tokens_per_second": 32057.380365361107,
+  "seconds_per_optimizer_step": 0.9982829622673344,
+  "peak_allocated_gib": 41.49271774291992,
+  "peak_reserved_gib": 43.142578125,
+  "validation_loss": 10.821500647997825,
+  "validation_target_tokens": 50694
+}
