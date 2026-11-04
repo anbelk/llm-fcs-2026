@@ -1,0 +1,145 @@
+model,query,expected,prediction
+base,Can you find the geolocation of IP addresses 8.8.8.8 and 1.1.1.1?,"[{'name': 'ip_geolocation', 'arguments': {'ip_address': '8.8.8.8'}}, {'name': 'ip_geolocation', 'arguments': {'ip_address': '1.1.1.1'}}]","<tool_call>
+{""name"": ""ip_geolocation"", ""arguments"": {""ip_address"": ""8.8.8.8""}}
+</tool_call>
+<tool_call>
+{""name"": ""ip_geolocation"", ""arguments"": {""ip_address"": ""1.1.1.1""}}
+</tool_call>"
+base,"Calculate the median of the list [10, 20, 30, 40, 50].","[{'name': 'calculate_median', 'arguments': {'numbers': [10, 20, 30, 40, 50]}}]","<tool_call>
+{""name"": ""calculate_median"", ""arguments"": {""numbers"": [10, 20, 30, 40, 50]}}
+</tool_call>"
+base,Find new movies in the 'Science Fiction' genre and the latest arrivals in the USA on the second page.,"[{'name': 'search_by_genre', 'arguments': {'with_genres': '878'}}, {'name': 'new_arrivals', 'arguments': {'region': 'US', 'page': 2}}]","<tool_call>
+{""name"": ""new_arrivals"", ""arguments"": {""region"": ""US"", ""page"": 2}}
+</tool_call>
+<tool_call>
+{""name"": ""search_by_genre"", ""arguments"": {""with_genres"": ""878"", ""page"": 1}}
+</tool_call>"
+base,Convert an image from the URL 'https://example.com/image.bmp' to PNG format with a width of 500 pixels and height of 500 pixels.,"[{'name': 'image_convert', 'arguments': {'accept': 'image/png', 'format': 'png', 'source': 'https://example.com/image.bmp', 'height': 500, 'width': 500}}]","<tool_call>
+{""name"": ""image_convert"", ""arguments"": {""accept"": ""image/png"", ""format"": ""png"", ""source"": ""https://example.com/image.bmp"", ""width"": 500, ""height"": 500}}
+</tool_call>"
+base,"Find the maximum sum of a contiguous subarray within the list of integers [-2, -3, 4, -1, -2, 1, 5, -3]. Also, calculate the age of a person born on '2005-05-15'. Lastly, check if '{}' has valid parentheses.","[{'name': 'find_max_subarray_sum', 'arguments': {'nums': [-2, -3, 4, -1, -2, 1, 5, -3]}}, {'name': 'calculate_age', 'arguments': {'birthdate': '2005-05-15'}}, {'name': 'is_valid_parentheses', 'arguments': {'s': '{}'}}]","<tool_call>
+{""name"": ""find_max_subarray_sum"", ""arguments"": {""nums"": [-2, -3, 4, -1, -2, 1, 5, -3]}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_age"", ""arguments"": {""birthdate"": ""2005-05-15""}}
+</tool_call>
+<tool_call>
+{""name"": ""is_valid_parentheses"", ""arguments"": {""s"": ""{}""}}
+</tool_call>"
+base,Extract entities from the statement 'Elon Musk is the CEO of Tesla and SpaceX.',"[{'name': 'display_entities', 'arguments': {'text': 'Elon Musk is the CEO of Tesla and SpaceX.'}}]","<tool_call>
+{""name"": ""display_entities"", ""arguments"": {""text"": ""Elon Musk is the CEO of Tesla and SpaceX.""}}
+</tool_call>"
+base,"Can you find all Asos countries in German? Also, search for 'books' in the US on page 3 with a language preference of English.","[{'name': 'countries_list', 'arguments': {'lang': 'de-DE'}}, {'name': 'getproducts', 'arguments': {'query': 'books', 'page': 3, 'lang': 'en', 'country': 'countryUS', 'location': 'us'}}]","<tool_call>
+{""name"": ""countries_list"", ""arguments"": {""lang"": ""de-DE""}}
+</tool_call>
+<tool_call>
+{""name"": ""getproducts"", ""arguments"": {""query"": ""books"", ""page"": 3, ""country"": ""countryUS"", ""lang"": ""en""}}
+</tool_call>"
+base,Retrieve the order details for order ID '123456789'.,"[{'name': 'get_order', 'arguments': {'is_id': '123456789'}}]","<tool_call>
+{""name"": ""get_order"", ""arguments"": {""is_id"": ""123456789""}}
+</tool_call>"
+base,What is my daily horoscope for Pisces in Korean and weekly horoscope for Libra in Spanish?,"[{'name': 'get_horoscope_multilingual', 'arguments': {'language': 'ko', 'period': 'daily', 'sign': 'pisces', 'type': '*type_for_daily_horoscope*'}}, {'name': 'get_horoscope_multilingual', 'arguments': {'language': 'es', 'period': 'weekly', 'sign': 'libra', 'type': '*type_for_weekly_horoscope*'}}]","<tool_call>
+{""name"": ""get_horoscope_multilingual"", ""arguments"": {""language"": ""Korean"", ""period"": ""daily"", ""sign"": ""pisces""}}
+</tool_call>
+<tool_call>
+{""name"": ""get_horoscope_multilingual"", ""arguments"": {""language"": ""Spanish"", ""period"": ""weekly"", ""sign"": ""libra""}}
+</tool_call>"
+base,"Find the historical rates for EUR and GBP on March 15, 2022, with EUR as the base.","[{'name': 'historical_rates', 'arguments': {'date': '2022-03-15', 'symbols': 'EUR,GBP', 'base': 'EUR'}}]","<tool_call>
+{""name"": ""historical_rates"", ""arguments"": {""date"": ""2022-03-15"", ""symbols"": ""EUR,GBP"", ""base"": ""EUR""}}
+</tool_call>"
+full,Can you find the geolocation of IP addresses 8.8.8.8 and 1.1.1.1?,"[{'name': 'ip_geolocation', 'arguments': {'ip_address': '8.8.8.8'}}, {'name': 'ip_geolocation', 'arguments': {'ip_address': '1.1.1.1'}}]","<tool_call>
+{""name"": ""ip_geolocation"", ""arguments"": {""ip_address"": ""8.8.8.8""}}
+</tool_call>
+<tool_call>
+{""name"": ""ip_geolocation"", ""arguments"": {""ip_address"": ""1.1.1.1""}}
+</tool_call>"
+full,"Calculate the median of the list [10, 20, 30, 40, 50].","[{'name': 'calculate_median', 'arguments': {'numbers': [10, 20, 30, 40, 50]}}]","<tool_call>
+{""name"": ""calculate_median"", ""arguments"": {""numbers"": [10, 20, 30, 40, 50]}}
+</tool_call>"
+full,Find new movies in the 'Science Fiction' genre and the latest arrivals in the USA on the second page.,"[{'name': 'search_by_genre', 'arguments': {'with_genres': '878'}}, {'name': 'new_arrivals', 'arguments': {'region': 'US', 'page': 2}}]","<tool_call>
+{""name"": ""search_by_genre"", ""arguments"": {""with_genres"": ""74""}}
+</tool_call>
+<tool_call>
+{""name"": ""new_arrivals"", ""arguments"": {""region"": ""US"", ""page"": 2}}
+</tool_call>"
+full,Convert an image from the URL 'https://example.com/image.bmp' to PNG format with a width of 500 pixels and height of 500 pixels.,"[{'name': 'image_convert', 'arguments': {'accept': 'image/png', 'format': 'png', 'source': 'https://example.com/image.bmp', 'height': 500, 'width': 500}}]","<tool_call>
+{""name"": ""image_convert"", ""arguments"": {""source"": ""https://example.com/image.bmp"", ""format"": ""png"", ""width"": 500, ""height"": 500}}
+</tool_call>"
+full,"Find the maximum sum of a contiguous subarray within the list of integers [-2, -3, 4, -1, -2, 1, 5, -3]. Also, calculate the age of a person born on '2005-05-15'. Lastly, check if '{}' has valid parentheses.","[{'name': 'find_max_subarray_sum', 'arguments': {'nums': [-2, -3, 4, -1, -2, 1, 5, -3]}}, {'name': 'calculate_age', 'arguments': {'birthdate': '2005-05-15'}}, {'name': 'is_valid_parentheses', 'arguments': {'s': '{}'}}]","<tool_call>
+{""name"": ""find_max_subarray_sum"", ""arguments"": {""nums"": [-2, -3, 4, -1, -2, 1, 5, -3]}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_age"", ""arguments"": {""birthdate"": ""2005-05-15""}}
+</tool_call>
+<tool_call>
+{""name"": ""is_valid_parentheses"", ""arguments"": {""s"": ""{}""}}
+</tool_call>"
+full,Extract entities from the statement 'Elon Musk is the CEO of Tesla and SpaceX.',"[{'name': 'display_entities', 'arguments': {'text': 'Elon Musk is the CEO of Tesla and SpaceX.'}}]","<tool_call>
+{""name"": ""display_entities"", ""arguments"": {""text"": ""Elon Musk is the CEO of Tesla and SpaceX.""}}
+</tool_call>"
+full,"Can you find all Asos countries in German? Also, search for 'books' in the US on page 3 with a language preference of English.","[{'name': 'countries_list', 'arguments': {'lang': 'de-DE'}}, {'name': 'getproducts', 'arguments': {'query': 'books', 'page': 3, 'lang': 'en', 'country': 'countryUS', 'location': 'us'}}]","<tool_call>
+{""name"": ""countries_list"", ""arguments"": {""lang"": ""de-DE""}}
+</tool_call>
+<tool_call>
+{""name"": ""getproducts"", ""arguments"": {""query"": ""books"", ""page"": 3, ""country"": ""countryUS"", ""lang"": ""en""}}
+</tool_call>"
+full,Retrieve the order details for order ID '123456789'.,"[{'name': 'get_order', 'arguments': {'is_id': '123456789'}}]","<tool_call>
+{""name"": ""get_order"", ""arguments"": {""is_id"": ""123456789""}}
+</tool_call>"
+full,What is my daily horoscope for Pisces in Korean and weekly horoscope for Libra in Spanish?,"[{'name': 'get_horoscope_multilingual', 'arguments': {'language': 'ko', 'period': 'daily', 'sign': 'pisces', 'type': '*type_for_daily_horoscope*'}}, {'name': 'get_horoscope_multilingual', 'arguments': {'language': 'es', 'period': 'weekly', 'sign': 'libra', 'type': '*type_for_weekly_horoscope*'}}]","<tool_call>
+{""name"": ""get_horoscope_multilingual"", ""arguments"": {""language"": ""ko"", ""period"": ""daily"", ""sign"": ""pisces""}}
+</tool_call>
+<tool_call>
+{""name"": ""get_horoscope_multilingual"", ""arguments"": {""language"": ""es"", ""period"": ""weekly"", ""sign"": ""libra"", ""type"": ""weekly_horoscope""}}
+</tool_call>"
+full,"Find the historical rates for EUR and GBP on March 15, 2022, with EUR as the base.","[{'name': 'historical_rates', 'arguments': {'date': '2022-03-15', 'symbols': 'EUR,GBP', 'base': 'EUR'}}]","<tool_call>
+{""name"": ""historical_rates"", ""arguments"": {""date"": ""2022-03-15"", ""symbols"": ""EUR"", ""base"": ""EUR""}}
+</tool_call>"
+lora,Can you find the geolocation of IP addresses 8.8.8.8 and 1.1.1.1?,"[{'name': 'ip_geolocation', 'arguments': {'ip_address': '8.8.8.8'}}, {'name': 'ip_geolocation', 'arguments': {'ip_address': '1.1.1.1'}}]","<tool_call>
+{""name"": ""ip_geolocation"", ""arguments"": {""ip_address"": ""8.8.8.8""}}
+</tool_call>
+<tool_call>
+{""name"": ""ip_geolocation"", ""arguments"": {""ip_address"": ""1.1.1.1""}}
+</tool_call>"
+lora,"Calculate the median of the list [10, 20, 30, 40, 50].","[{'name': 'calculate_median', 'arguments': {'numbers': [10, 20, 30, 40, 50]}}]","<tool_call>
+{""name"": ""calculate_median"", ""arguments"": {""numbers"": [10, 20, 30, 40, 50]}}
+</tool_call>"
+lora,Find new movies in the 'Science Fiction' genre and the latest arrivals in the USA on the second page.,"[{'name': 'search_by_genre', 'arguments': {'with_genres': '878'}}, {'name': 'new_arrivals', 'arguments': {'region': 'US', 'page': 2}}]","<tool_call>
+{""name"": ""new_arrivals"", ""arguments"": {""region"": ""US"", ""page"": 2}}
+</tool_call>
+<tool_call>
+{""name"": ""search_by_genre"", ""arguments"": {""with_genres"": ""878""}}
+</tool_call>"
+lora,Convert an image from the URL 'https://example.com/image.bmp' to PNG format with a width of 500 pixels and height of 500 pixels.,"[{'name': 'image_convert', 'arguments': {'accept': 'image/png', 'format': 'png', 'source': 'https://example.com/image.bmp', 'height': 500, 'width': 500}}]","<tool_call>
+{""name"": ""image_convert"", ""arguments"": {""accept"": ""image/png"", ""format"": ""png"", ""source"": ""https://example.com/image.bmp"", ""width"": 500, ""height"": 500}}
+</tool_call>"
+lora,"Find the maximum sum of a contiguous subarray within the list of integers [-2, -3, 4, -1, -2, 1, 5, -3]. Also, calculate the age of a person born on '2005-05-15'. Lastly, check if '{}' has valid parentheses.","[{'name': 'find_max_subarray_sum', 'arguments': {'nums': [-2, -3, 4, -1, -2, 1, 5, -3]}}, {'name': 'calculate_age', 'arguments': {'birthdate': '2005-05-15'}}, {'name': 'is_valid_parentheses', 'arguments': {'s': '{}'}}]","<tool_call>
+{""name"": ""find_max_subarray_sum"", ""arguments"": {""nums"": [-2, -3, 4, -1, -2, 1, 5, -3]}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_age"", ""arguments"": {""birthdate"": ""2005-05-15""}}
+</tool_call>
+<tool_call>
+{""name"": ""is_valid_parentheses"", ""arguments"": {""s"": ""{}""}}
+</tool_call>"
+lora,Extract entities from the statement 'Elon Musk is the CEO of Tesla and SpaceX.',"[{'name': 'display_entities', 'arguments': {'text': 'Elon Musk is the CEO of Tesla and SpaceX.'}}]","<tool_call>
+{""name"": ""display_entities"", ""arguments"": {""text"": ""Elon Musk is the CEO of Tesla and SpaceX.""}}
+</tool_call>"
+lora,"Can you find all Asos countries in German? Also, search for 'books' in the US on page 3 with a language preference of English.","[{'name': 'countries_list', 'arguments': {'lang': 'de-DE'}}, {'name': 'getproducts', 'arguments': {'query': 'books', 'page': 3, 'lang': 'en', 'country': 'countryUS', 'location': 'us'}}]","<tool_call>
+{""name"": ""countries_list"", ""arguments"": {""lang"": ""de-DE""}}
+</tool_call>
+<tool_call>
+{""name"": ""product_search"", ""arguments"": {""store_id"": ""asos"", ""keyword"": ""books"", ""page"": 3, ""country"": ""countryUS"", ""lang"": ""en""}}
+</tool_call>"
+lora,Retrieve the order details for order ID '123456789'.,"[{'name': 'get_order', 'arguments': {'is_id': '123456789'}}]","<tool_call>
+{""name"": ""get_order"", ""arguments"": {""is_id"": ""123456789""}}
+</tool_call>"
+lora,What is my daily horoscope for Pisces in Korean and weekly horoscope for Libra in Spanish?,"[{'name': 'get_horoscope_multilingual', 'arguments': {'language': 'ko', 'period': 'daily', 'sign': 'pisces', 'type': '*type_for_daily_horoscope*'}}, {'name': 'get_horoscope_multilingual', 'arguments': {'language': 'es', 'period': 'weekly', 'sign': 'libra', 'type': '*type_for_weekly_horoscope*'}}]","<tool_call>
+{""name"": ""get_horoscope_multilingual"", ""arguments"": {""language"": ""Korean"", ""period"": ""daily"", ""sign"": ""pisces""}}
+</tool_call>
+<tool_call>
+{""name"": ""get_horoscope_multilingual"", ""arguments"": {""language"": ""Spanish"", ""period"": ""weekly"", ""sign"": ""libra""}}
+</tool_call>"
+lora,"Find the historical rates for EUR and GBP on March 15, 2022, with EUR as the base.","[{'name': 'historical_rates', 'arguments': {'date': '2022-03-15', 'symbols': 'EUR,GBP', 'base': 'EUR'}}]","<tool_call>
+{""name"": ""historical_rates"", ""arguments"": {""date"": ""2022-03-15"", ""symbols"": ""EUR,GBP"", ""base"": ""EUR""}}
+</tool_call>"
