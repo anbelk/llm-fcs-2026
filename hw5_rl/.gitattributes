@@ -1,4 +1,0 @@
-*.pdf binary
-*.png binary
-*.log -text -whitespace
-*.csv text eol=lf
