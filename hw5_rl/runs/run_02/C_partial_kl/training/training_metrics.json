@@ -1,0 +1,12 @@
+{
+  "train_runtime": 496.1839,
+  "train_samples_per_second": 0.516,
+  "train_steps_per_second": 0.064,
+  "total_flos": 0.0,
+  "train_loss": 0.01585860556902402,
+  "epoch": 0.005964585274930103,
+  "elapsed_seconds": 496.77835202310234,
+  "best_checkpoint": "/workspace/runs/run_02/C_partial_kl/training/checkpoint-32",
+  "best_metric": 0.5625,
+  "peak_gpu_allocated_gib": 31.564342498779297
+}

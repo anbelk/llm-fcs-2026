@@ -1,0 +1,294 @@
+{
+  "created_utc": "2026-11-12T19:36:49.564167+00:00",
+  "stages": {
+    "native_parser": {
+      "status": "completed",
+      "started_utc": "2026-11-12T19:21:02.980689+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/native_smoke.py"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_01/native_parser.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T19:21:26.860277+00:00",
+      "reused_from": "/home/edu/andrej_hw5_20261112_01a1d118/runs/run_01",
+      "reuse_reason": "Identical baseline/parser; no model/data/evaluator change"
+    },
+    "baseline/bfcl": {
+      "status": "completed",
+      "started_utc": "2026-11-12T19:22:00.250951+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/materials/evaluate.py",
+        "/cache/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+        "--output",
+        "/workspace/runs/run_01/baseline/bfcl"
+      ],
+      "cwd": "/workspace/hw5_rl/materials",
+      "log": "/workspace/runs/run_01/baseline_bfcl.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T19:25:25.550498+00:00",
+      "reused_from": "/home/edu/andrej_hw5_20261112_01a1d118/runs/run_01",
+      "reuse_reason": "Identical baseline/parser; no model/data/evaluator change"
+    },
+    "baseline/validation": {
+      "status": "completed",
+      "started_utc": "2026-11-12T19:25:25.550828+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/validate.py",
+        "--model",
+        "/cache/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+        "--output",
+        "/workspace/runs/run_01/baseline/validation"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_01/baseline_validation.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T19:27:43.123190+00:00",
+      "reused_from": "/home/edu/andrej_hw5_20261112_01a1d118/runs/run_01",
+      "reuse_reason": "Identical baseline/parser; no model/data/evaluator change"
+    },
+    "unit_tests": {
+      "status": "completed",
+      "started_utc": "2026-11-12T19:36:56.827802+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/workspace/hw5_rl",
+        "-p",
+        "test_rewards.py",
+        "-v"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_02/unit_tests.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T19:36:56.900816+00:00"
+    },
+    "A_strict/train": {
+      "status": "completed",
+      "started_utc": "2026-11-12T19:36:57.749223+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/train.py",
+        "--config",
+        "/workspace/hw5_rl/configs/A_strict.json",
+        "--output",
+        "/workspace/runs/run_02/A_strict/training",
+        "--base-path",
+        "/cache/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_02/A_strict_train.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T19:51:54.880659+00:00"
+    },
+    "A_strict/merge": {
+      "status": "completed",
+      "started_utc": "2026-11-12T19:51:54.881023+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/merge.py",
+        "--adapter",
+        "/workspace/runs/run_02/A_strict/training/adapter",
+        "--output",
+        "/workspace/runs/run_02/A_strict/merged"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_02/A_strict_merge.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T19:52:17.029376+00:00"
+    },
+    "A_strict/validation": {
+      "status": "completed",
+      "started_utc": "2026-11-12T19:52:17.029768+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/validate.py",
+        "--model",
+        "/workspace/runs/run_02/A_strict/merged",
+        "--output",
+        "/workspace/runs/run_02/A_strict/validation"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_02/A_strict_validation.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T19:54:31.896013+00:00"
+    },
+    "A_strict/bfcl": {
+      "status": "completed",
+      "started_utc": "2026-11-12T19:54:31.896385+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/materials/evaluate.py",
+        "/workspace/runs/run_02/A_strict/merged",
+        "--output",
+        "/workspace/runs/run_02/A_strict/bfcl"
+      ],
+      "cwd": "/workspace/hw5_rl/materials",
+      "log": "/workspace/runs/run_02/A_strict_bfcl.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T19:56:12.080169+00:00"
+    },
+    "B_partial/train": {
+      "status": "completed",
+      "started_utc": "2026-11-12T19:56:12.081590+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/train.py",
+        "--config",
+        "/workspace/hw5_rl/configs/B_partial.json",
+        "--output",
+        "/workspace/runs/run_02/B_partial/training",
+        "--base-path",
+        "/cache/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_02/B_partial_train.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T20:05:54.525211+00:00"
+    },
+    "B_partial/merge": {
+      "status": "completed",
+      "started_utc": "2026-11-12T20:05:54.525735+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/merge.py",
+        "--adapter",
+        "/workspace/runs/run_02/B_partial/training/adapter",
+        "--output",
+        "/workspace/runs/run_02/B_partial/merged"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_02/B_partial_merge.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T20:06:17.369914+00:00"
+    },
+    "B_partial/validation": {
+      "status": "completed",
+      "started_utc": "2026-11-12T20:06:17.370298+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/validate.py",
+        "--model",
+        "/workspace/runs/run_02/B_partial/merged",
+        "--output",
+        "/workspace/runs/run_02/B_partial/validation"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_02/B_partial_validation.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T20:08:33.445258+00:00"
+    },
+    "B_partial/bfcl": {
+      "status": "completed",
+      "started_utc": "2026-11-12T20:08:33.445657+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/materials/evaluate.py",
+        "/workspace/runs/run_02/B_partial/merged",
+        "--output",
+        "/workspace/runs/run_02/B_partial/bfcl"
+      ],
+      "cwd": "/workspace/hw5_rl/materials",
+      "log": "/workspace/runs/run_02/B_partial_bfcl.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T20:10:07.131184+00:00"
+    },
+    "C_partial_kl/train": {
+      "status": "completed",
+      "started_utc": "2026-11-12T20:10:07.131620+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/train.py",
+        "--config",
+        "/workspace/hw5_rl/configs/C_partial_kl.json",
+        "--output",
+        "/workspace/runs/run_02/C_partial_kl/training",
+        "--base-path",
+        "/cache/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_02/C_partial_kl_train.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T20:19:29.366265+00:00"
+    },
+    "C_partial_kl/merge": {
+      "status": "completed",
+      "started_utc": "2026-11-12T20:19:29.366837+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/merge.py",
+        "--adapter",
+        "/workspace/runs/run_02/C_partial_kl/training/adapter",
+        "--output",
+        "/workspace/runs/run_02/C_partial_kl/merged"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_02/C_partial_kl_merge.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T20:19:53.053033+00:00"
+    },
+    "C_partial_kl/validation": {
+      "status": "completed",
+      "started_utc": "2026-11-12T20:19:53.053467+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/validate.py",
+        "--model",
+        "/workspace/runs/run_02/C_partial_kl/merged",
+        "--output",
+        "/workspace/runs/run_02/C_partial_kl/validation"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_02/C_partial_kl_validation.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T20:22:15.664173+00:00"
+    },
+    "C_partial_kl/bfcl": {
+      "status": "completed",
+      "started_utc": "2026-11-12T20:22:15.664633+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/materials/evaluate.py",
+        "/workspace/runs/run_02/C_partial_kl/merged",
+        "--output",
+        "/workspace/runs/run_02/C_partial_kl/bfcl"
+      ],
+      "cwd": "/workspace/hw5_rl/materials",
+      "log": "/workspace/runs/run_02/C_partial_kl_bfcl.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T20:23:50.632621+00:00"
+    },
+    "summary": {
+      "status": "completed",
+      "started_utc": "2026-11-12T20:23:50.633063+00:00",
+      "command": [
+        "/usr/bin/python3",
+        "/workspace/hw5_rl/summarize.py",
+        "--runs",
+        "/workspace/runs/run_02"
+      ],
+      "cwd": "/workspace/hw5_rl",
+      "log": "/workspace/runs/run_02/summary.log",
+      "returncode": 0,
+      "finished_utc": "2026-11-12T20:23:50.686255+00:00"
+    }
+  },
+  "budget_note": "All main RL runs: 32 optimizer steps, checkpoints 16/32, selection validation 64. Original 128-step A stopped after 10 steps for time budget, excluded from comparison.",
+  "versions": {
+    "transformers": "5.9.0",
+    "trl": "1.16.0",
+    "peft": "0.18.1",
+    "vllm": "0.22.0+cu129",
+    "datasets": "4.7.0",
+    "accelerate": "1.10.1",
+    "numpy": "2.2.6",
+    "bfcl-eval": "2026.3.23"
+  },
+  "completed_utc": "2026-11-12T20:23:50.686551+00:00"
+}

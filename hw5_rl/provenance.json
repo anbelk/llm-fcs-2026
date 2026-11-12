@@ -1,0 +1,38 @@
+{
+  "materials": {
+    "Dockerfile": {
+      "bytes": 723,
+      "sha256": "d96b2164a9165964594cb3030afbdb6dee9f3b43ee644c460f0aad4867762421"
+    },
+    "bfcl.jsonl": {
+      "bytes": 718239,
+      "sha256": "b257ffe2c539897123706ed2211f9ad0e68b8f8fbad7b523ba5a3fcca2a457b2"
+    },
+    "evaluate.py": {
+      "bytes": 10692,
+      "sha256": "62411a6f1bd790bd54f27fb09e567075b5b27510d126ebe145e72b8319abc7b6"
+    }
+  },
+  "model_id": "Qwen/Qwen3.5-2B",
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "official_hf_cached_files": {
+    "chat_template.jinja": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+    "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "merges.txt": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c",
+    "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+  },
+  "repository_base_commit": "d3f864d3d9159a8842a46c0d6a8ecead69a7e625",
+  "source_urls": {
+    "Dockerfile": "https://drive.google.com/drive/folders/1Ps26iBLmLtfUhbZ6pLAZ98WA6mH0Yh-K",
+    "assignment": "https://drive.google.com/file/d/1GCFSSygmlVZvdhiRckeBrAcYDKxhLiHv/view",
+    "bfcl.jsonl": "https://drive.google.com/file/d/1E0pWHCHsyAukOuWnf6aEQgqiaJpcQ5bS/view",
+    "evaluate.py": "https://drive.google.com/file/d/1OLPrFME0ZbaB6uH4h1cX2EIoccwjMfWh/view"
+  },
+  "toolace": {
+    "revision": "6bda777c88d21e5a204703c1ee45597a8fa4f734",
+    "sha256": "ba12c083fca7e8da48c67ad5b895e495447da7c66e39a2e19742c082e6cb537e",
+    "url": "https://huggingface.co/datasets/Team-ACE/ToolACE/resolve/6bda777c88d21e5a204703c1ee45597a8fa4f734/data.json"
+  }
+}

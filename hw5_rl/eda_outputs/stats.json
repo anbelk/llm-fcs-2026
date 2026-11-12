@@ -1,0 +1,234 @@
+{
+  "arguments_per_call": {
+    "0": 764,
+    "1": 8201,
+    "2": 5536,
+    "3": 2655,
+    "4": 698,
+    "5": 204,
+    "6": 63,
+    "7": 30,
+    "8": 5,
+    "9": 5,
+    "10": 9,
+    "11": 7,
+    "18": 2
+  },
+  "available_tools_per_dialogue": {
+    "0": 248,
+    "1": 2782,
+    "2": 1872,
+    "3": 1684,
+    "4": 1282,
+    "5": 1282,
+    "6": 1163,
+    "7": 263,
+    "8": 195,
+    "9": 29
+  },
+  "calls_per_assistant_turn": {
+    "0": 3337,
+    "1": 5855,
+    "2": 1683,
+    "3": 1234,
+    "4": 922,
+    "5": 199,
+    "6": 64,
+    "7": 17,
+    "8": 5,
+    "9": 2,
+    "12": 1
+  },
+  "counts": {
+    "after_user": 11952,
+    "all_assistant_turns": 13819,
+    "all_decisions_after_user": 12452,
+    "arguments": 31926,
+    "assistant_turns": 13319,
+    "calls": 18179,
+    "calls_turns": 9982,
+    "candidate_decisions": 11946,
+    "decision_call_turns": 9649,
+    "decision_no_call_turns": 2303,
+    "dialogues": 11300,
+    "dialogues_with_time_context": 5874,
+    "excluded_bad_current_target": 6,
+    "excluded_duplicate_prompts": 36,
+    "excluded_length": 14,
+    "non_python_name_occurrences": 23808,
+    "not_after_user": 1367,
+    "omitted_optional_arguments": 7856,
+    "post_tool_call_turns": 333,
+    "post_tool_no_call_turns": 1034,
+    "schema_parse_fail_dialogues": 500,
+    "selected_decisions": 11896,
+    "text_or_empty_turns": 3337,
+    "turns_with_repeated_function_name": 2357,
+    "turns_with_schema_issues": 6,
+    "unique_full_dialogues": 11297,
+    "unique_function_names": 16134,
+    "unique_function_schemas": 18024
+  },
+  "declared_parameter_types_occurrences": {
+    "['integer', 'null']": 44,
+    "['integer', 'string']": 11,
+    "['number', 'null']": 3,
+    "['number', 'string']": 4,
+    "['string', 'integer']": 6,
+    "['string', 'null']": 28,
+    "array": 2186,
+    "boolean": 1365,
+    "dict": 1766,
+    "float": 10081,
+    "int": 7340,
+    "string": 51228
+  },
+  "duplicates": {
+    "candidate_prompt_extra_copies": 36,
+    "conflicting_prompt_groups": 0,
+    "full_dialogue_extra_copies": 3
+  },
+  "environment": {
+    "jinja2": "3.1.6",
+    "python": "3.14.6",
+    "tokenizers": "0.22.2",
+    "transformers": "5.9.0"
+  },
+  "lengths": {
+    "candidate_prompt_gt3072": 11,
+    "candidate_prompt_gt4096": 2,
+    "candidate_prompt_tokens": {
+      "max": 4593,
+      "mean": 762.01,
+      "min": 21,
+      "n": 11946,
+      "p50": 701,
+      "p90": 1207,
+      "p95": 1399,
+      "p99": 1918
+    },
+    "candidate_reference_gt1024": 3,
+    "candidate_target_tokens": {
+      "max": 1241,
+      "mean": 100.12,
+      "min": 2,
+      "n": 11946,
+      "p50": 67,
+      "p90": 214,
+      "p95": 279,
+      "p99": 421
+    },
+    "source_dialogue_chars": {
+      "max": 15634,
+      "mean": 2890.3,
+      "min": 660,
+      "n": 11300,
+      "p50": 2590,
+      "p90": 4657,
+      "p95": 5576,
+      "p99": 7837
+    },
+    "source_dialogue_tokens_no_template": {
+      "max": 4831,
+      "mean": 731.3,
+      "min": 140,
+      "n": 11300,
+      "p50": 655,
+      "p90": 1189,
+      "p95": 1419,
+      "p99": 2025
+    }
+  },
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "observed_argument_value_types": {
+    "bool": 201,
+    "dict": 2021,
+    "float": 2885,
+    "int": 3534,
+    "list": 1976,
+    "str": 21309
+  },
+  "overlap": {
+    "bfcl_exact_normalized_user_overlap": 0,
+    "bfcl_function_name_overlap": 14,
+    "bfcl_rows": 350,
+    "bfcl_sha256": "b257ffe2c539897123706ed2211f9ad0e68b8f8fbad7b523ba5a3fcca2a457b2",
+    "shared_function_names": 2198,
+    "shared_normalized_user_utterances": 12
+  },
+  "role_sequences": {
+    "user/assistant": 10500,
+    "user/assistant/tool/assistant": 6,
+    "user/assistant/tool/assistant/tool/assistant": 259,
+    "user/assistant/tool/assistant/tool/assistant/tool/assistant": 24,
+    "user/assistant/tool/assistant/tool/assistant/tool/assistant/tool/assistant": 2,
+    "user/assistant/tool/assistant/tool/assistant/user/assistant/tool/assistant": 1,
+    "user/assistant/tool/assistant/user/assistant/tool/assistant/tool/assistant": 1,
+    "user/assistant/tool/assistant/user/assistant/tool/assistant/user/assistant": 22,
+    "user/assistant/tool/assistant/user/assistant/tool/assistant/user/assistant/tool/assistant": 8,
+    "user/assistant/tool/assistant/user/assistant/tool/assistant/user/assistant/user/assistant": 7,
+    "user/assistant/tool/assistant/user/assistant/user/assistant": 179,
+    "user/assistant/tool/assistant/user/assistant/user/assistant/tool/assistant": 125,
+    "user/assistant/tool/assistant/user/assistant/user/assistant/tool/assistant/user/assistant": 44,
+    "user/assistant/tool/assistant/user/assistant/user/assistant/user/assistant": 34,
+    "user/assistant/tool/assistant/user/assistant/user/assistant/user/assistant/tool/assistant": 17,
+    "user/assistant/tool/assistant/user/assistant/user/assistant/user/assistant/user/assistant": 5,
+    "user/assistant/user/assistant/tool/assistant/tool/assistant": 5,
+    "user/assistant/user/assistant/tool/assistant/tool/assistant/tool/assistant": 2,
+    "user/assistant/user/assistant/tool/assistant/user/assistant": 23,
+    "user/assistant/user/assistant/tool/assistant/user/assistant/tool/assistant": 5,
+    "user/assistant/user/assistant/tool/assistant/user/assistant/tool/assistant/user/assistant": 2,
+    "user/assistant/user/assistant/tool/assistant/user/assistant/user/assistant": 14,
+    "user/assistant/user/assistant/tool/assistant/user/assistant/user/assistant/tool/assistant": 5,
+    "user/assistant/user/assistant/tool/assistant/user/assistant/user/assistant/user/assistant": 4,
+    "user/assistant/user/assistant/user/assistant": 3,
+    "user/assistant/user/assistant/user/assistant/tool/assistant": 1,
+    "user/assistant/user/assistant/user/assistant/tool/assistant/user/assistant": 1,
+    "user/assistant/user/assistant/user/assistant/tool/assistant/user/assistant/tool/assistant": 1
+  },
+  "roles": {
+    "assistant": 13819,
+    "tool": 1367,
+    "user": 12452
+  },
+  "schema_issues": {
+    "enum_mismatch": 0,
+    "missing_required": 0,
+    "type_mismatch": 0,
+    "undeclared_argument": 12
+  },
+  "source": {
+    "revision": "6bda777c88d21e5a204703c1ee45597a8fa4f734",
+    "sha256": "ba12c083fca7e8da48c67ad5b895e495447da7c66e39a2e19742c082e6cb537e",
+    "url": "https://huggingface.co/datasets/Team-ACE/ToolACE/resolve/6bda777c88d21e5a204703c1ee45597a8fa4f734/data.json"
+  },
+  "split": {
+    "train": {
+      "dialogues": 10191,
+      "dialogues_contributing_selected": 9699,
+      "selected_decisions": 10731,
+      "selected_no_call": 2066
+    },
+    "validation": {
+      "dialogues": 1109,
+      "dialogues_contributing_selected": 1056,
+      "selected_decisions": 1165,
+      "selected_no_call": 227
+    }
+  },
+  "unsupported_schema_format_markers_nonexclusive": {
+    "html": 77,
+    "json_object": 70,
+    "latex": 82,
+    "markdown": 87,
+    "xml": 68,
+    "yaml_or_plain": 162
+  },
+  "user_turns_per_dialogue": {
+    "1": 10791,
+    "2": 9,
+    "3": 366,
+    "4": 125,
+    "5": 9
+  }
+}
