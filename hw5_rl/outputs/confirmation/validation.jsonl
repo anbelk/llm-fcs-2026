@@ -1,0 +1,2 @@
+{"step": 0, "strict_accuracy": 0.6066666666666667, "categories": {"simple": 0.6, "multiple": 0.7666666666666667, "parallel": 0.6666666666666666, "parallel_multiple": 0.36666666666666664, "no_call": 0.6333333333333333}, "count": 150}
+{"step": 1, "strict_accuracy": 0.68, "categories": {"simple": 0.6, "multiple": 0.8333333333333334, "parallel": 0.7, "parallel_multiple": 0.5333333333333333, "no_call": 0.7333333333333333}, "count": 150}

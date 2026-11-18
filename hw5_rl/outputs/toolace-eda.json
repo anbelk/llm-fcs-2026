@@ -1,0 +1,184 @@
+{
+  "source_sha256": "ba12c083fca7e8da48c67ad5b895e495447da7c66e39a2e19742c082e6cb537e",
+  "raw_dialogues": 11300,
+  "raw_dialogue_messages": {
+    "min": 2,
+    "p50": 2,
+    "p90": 2,
+    "p95": 6,
+    "p99": 10,
+    "max": 12
+  },
+  "raw_message_roles": {
+    "user": 12452,
+    "assistant": 13819,
+    "tool": 1367
+  },
+  "raw_single_user_turn_dialogues": 10791,
+  "prepared_examples": {
+    "train": 10415,
+    "validation": 1129
+  },
+  "category_counts": {
+    "train": {
+      "multiple": 3596,
+      "no_call": 1845,
+      "parallel_multiple": 1863,
+      "parallel": 1794,
+      "simple": 1317
+    },
+    "validation": {
+      "multiple": 408,
+      "no_call": 193,
+      "parallel": 192,
+      "parallel_multiple": 211,
+      "simple": 125
+    }
+  },
+  "prompt_tokens": {
+    "min": 272,
+    "p50": 696,
+    "p90": 1196,
+    "p95": 1393,
+    "p99": 1924,
+    "max": 4595
+  },
+  "source_reference_tokens": {
+    "min": 2,
+    "p50": 37,
+    "p90": 132,
+    "p95": 213,
+    "p99": 384,
+    "max": 1174
+  },
+  "tools_per_example": {
+    "min": 1,
+    "p50": 3,
+    "p90": 6,
+    "p95": 6,
+    "p99": 8,
+    "max": 9
+  },
+  "most_common_tool_counts": [
+    [
+      1,
+      2780
+    ],
+    [
+      3,
+      1906
+    ],
+    [
+      2,
+      1878
+    ],
+    [
+      4,
+      1572
+    ],
+    [
+      5,
+      1525
+    ]
+  ],
+  "unique_normalized_tool_names": 15986,
+  "prompts_above_3072": 11,
+  "source_references_above_512": 30,
+  "by_category": {
+    "simple": {
+      "prompt_tokens": {
+        "min": 272,
+        "p50": 455,
+        "p90": 634,
+        "p95": 692,
+        "p99": 870,
+        "max": 1282
+      },
+      "reference_tokens": {
+        "min": 4,
+        "p50": 33,
+        "p90": 118,
+        "p95": 163,
+        "p99": 265,
+        "max": 693
+      },
+      "prompts_above_3072": 0
+    },
+    "multiple": {
+      "prompt_tokens": {
+        "min": 333,
+        "p50": 762,
+        "p90": 1173,
+        "p95": 1370,
+        "p99": 1939,
+        "max": 3917
+      },
+      "reference_tokens": {
+        "min": 2,
+        "p50": 16,
+        "p90": 40,
+        "p95": 56,
+        "p99": 118,
+        "max": 577
+      },
+      "prompts_above_3072": 2
+    },
+    "parallel": {
+      "prompt_tokens": {
+        "min": 294,
+        "p50": 618,
+        "p90": 990,
+        "p95": 1136,
+        "p99": 1389,
+        "max": 2994
+      },
+      "reference_tokens": {
+        "min": 13,
+        "p50": 53,
+        "p90": 151,
+        "p95": 213,
+        "p99": 361,
+        "max": 992
+      },
+      "prompts_above_3072": 0
+    },
+    "parallel_multiple": {
+      "prompt_tokens": {
+        "min": 334,
+        "p50": 887,
+        "p90": 1313,
+        "p95": 1446,
+        "p99": 1789,
+        "max": 3132
+      },
+      "reference_tokens": {
+        "min": 8,
+        "p50": 57,
+        "p90": 150,
+        "p95": 207,
+        "p99": 327,
+        "max": 1174
+      },
+      "prompts_above_3072": 1
+    },
+    "no_call": {
+      "prompt_tokens": {
+        "min": 272,
+        "p50": 613,
+        "p90": 1441,
+        "p95": 1720,
+        "p99": 2344,
+        "max": 4595
+      },
+      "reference_tokens": {
+        "min": 6,
+        "p50": 57,
+        "p90": 293,
+        "p95": 366,
+        "p99": 489,
+        "max": 816
+      },
+      "prompts_above_3072": 8
+    }
+  }
+}
