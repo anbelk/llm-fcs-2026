@@ -1,0 +1,14 @@
+{
+  "massive": {
+    "n": 64,
+    "tokens_mean": 12.890625,
+    "tokens_min": 3,
+    "tokens_max": 29
+  },
+  "wiki": {
+    "n": 64,
+    "tokens_mean": 90.8125,
+    "tokens_min": 3,
+    "tokens_max": 256
+  }
+}

@@ -1,0 +1,14 @@
+/artifacts_compression_hw/*/*.safetensors
+/artifacts_compression_hw/*/training_args.bin
+/artifacts_compression_hw/*/tokenizer.json
+/artifacts_compression_hw/*/vocab.json
+/artifacts_compression_hw/*/merges.txt
+/.ipynb_checkpoints/
+/artifacts_compression_hw/*/added_tokens.json
+/artifacts_compression_hw/*/chat_template.jinja
+/artifacts_compression_hw/*/special_tokens_map.json
+/artifacts_compression_hw/*/tokenizer_config.json
+/artifacts_compression_hw/*/README.md
+/artifacts_compression_hw/smoke.json
+/artifacts_compression_hw/weights.json
+/artifacts_compression_hw/*/model.safetensors.index.json
